@@ -1,9 +1,12 @@
 # Read Me
-State probabilities, transition probabilities, and estimates of the forward path of a hidden markovian process using forward-backward and viterbi algorithm.
 
-The baum-welch algorithm makes use of the forward/backward algorithm to estimate the state parameters (mu and sigma parameters of each state in this continous application), and the transition probabilities (probability of transitioning from hidden state i to hidden state j) using expectation maximization. These defined features of an HMM can then be used to estimate the state and generate predictions at a given timestep using the prior information of the previous and future step.
+Hidden markov models attempt to model the impact of underlying "hidden" states on the observable output of a process. Once the elements of the underlying states are accurately estimated, one can more effectively estimate the given state of an process or the likelihood of a future output (prediction). Hidden markov models have applications across continuous and discrete observations, this application assumes continuous outputs with normal structures of the hidden states.
 
-The viterbi algorithm predicts the most likely forward pass given the state parameters and transition probabilities defined using the baum-welch algorithm highlighted above.
+State probabilities, transition probabilities, estimates of the forward path, and OOB predictions of a hidden markovian process are produced. This model includes application of the baum-welch (forward-backward) and viterbi algorithm.
+
+The baum-welch algorithm makes use of the forward/backward algorithm to estimate the state parameters (mu and sigma parameters of each state in this continous application), and the transition probabilities (probability of transitioning from hidden state i to hidden state j) using expectation-maximization. These defined features of an HMM can then be used to estimate the state and generate predictions at a given timestep using the prior information of the previous and future step.
+
+The viterbi algorithm predicts the most likely forward pass given the state parameters and transition probabilities defined using the baum-welch algorithm highlighted above. The viterbi algorithm is especially useful in the sense that it does not make unrealistic use of future observations, only the prior observation.
 
 
 Baum-Welch Algorithm:
