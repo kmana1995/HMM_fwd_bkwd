@@ -1,2 +1,2 @@
-# HMM_fwd_bkwd
+# Read Me
 State probabilities, transition probabilities, and estimates of the forward path of a hidden markovian process using forward-backward and viterbi algorithm.
